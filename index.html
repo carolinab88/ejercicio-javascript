@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ejercicio javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid pe-5">
+          <a class="navbar-brand text-light px-3 fs-3" href="#">Conf Bs AS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item px-2 fs-5">
+                <a class="nav-link active text-white-50" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item px-2 fs-5">
+                <a class="nav-link text-white-50" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item px-2 fs-5">
+                <a class="nav-link text-white-50" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item px-2 fs-5">
+                <a class="nav-link text-light">Conviertete en orador</a>
+              </li>
+              <li class="nav-item px-2 fs-5">
+                <a class="nav-link text-success">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>      
+          <div class="text-center col-8 row mx-auto justify-content-center mt-4 " >
+            <div class=" col-sm card mx-1 border border-primary border-2 rounded-1" style="width: 32%">
+                <div class="card-body">
+                  <h5 class="card-title p-2">Estudiante</h5>
+                  <h6 class="card-subtitle mb-2   fs-5 p-2">Tienen un descuento</h6>
+                  <p class="card-text fw-bold p-2">80%</p>
+                  <p class="card-text p-2 text-secondary" >* presentar documentacion</p> 
+                </div>
+              </div>
+              <div class=" col-sm card mx-1 border border-success  border-2 rounded-1  " style="width: 32%;">
+                <div class="card-body ">
+                  <h5 class="card-title p-2 ">Trainee</h5>
+                  <h6 class="card-subtitle mb-2  fs-5 p-2">Tienen un descuento</h6>
+                  <p class="card-text fw-bold p-2">50%</p>
+                  <p class="card-text p-2 text-secondary">* presentar documentacion</p> 
+                </div>
+              </div>
+              <div class="col-sm card mx-1 border border-warning border-2 rounded-1" style="width: 32%;">
+                <div class="card-body ">
+                  <h5 class="card-title p-2">Junior</h5>
+                  <h6 class="card-subtitle mb-2   fs-5 p-2">Tienen un descuento</h6>
+                  <p class="card-text fw-bold p-2">15%</p>
+                  <p class="card-text p-2 text-secondary">* presentar documentacion</p>  
+                </div>
+              </div>
+          </div>
+    <p class="text-center">VENTA</p>
+    <H1 class="text-center">VALOR DE TICKET $200</H1>
+      <form action="" class="col-8 mx-auto"  >
+        <input type="text " placeholder="Nombre" style="width: 48%;" class="ms-3 p-2" >
+        <input type="text" placeholder="Apellido"style="width: 48%;" class="ms-2 p-2">
+        <input type="email" placeholder="Apellido"style="width: 97%;" class="ms-3 mt-4 p-2">
+        <label for="" class="ms-3 mt-3 mb-2 fs-5 col-6">Cantidad</label> 
+        <label for="" class="ms- mt-3 mb-2 fs-5 ">Categoria</label>
+        <br>
+        <input type="number" placeholder="cantidad" style="width: 48%;" class="ms-3 p-2" id="cant" onkeyup="calculo()" >
+        <select class="ms-2 p-2" id="categoria" style="width: 48%;" onchange="calculo()">
+          <option selected value="1">Estudiante</option>
+          <option value="2">Junior</option>
+          <option value="3">Trainee</option>
+        </select>
+          <div class=" mx-auto ">
+            <div id="total" class="bg-info my-5 mx-3 fs-3 p-3" style="height:5rem ;">
+            </div>
+          </div>
+        <button type="button" class="btn btn-primary   ms-3" style="width: 48%;">Borrar</button>
+        <button type="button" class="btn btn-secondary   ms-2" style="width: 48%;">Resumen</button>
+      </form>
+      <footer class=" text-center row align-items-center mt-3 mb-1 ps-5 pe-5 "  style="height: 8rem;">
+        <a href="http://" class="col fs-5 text-light text-decoration-none ms-5">Preguntas frecuentes</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Contactanos</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Prensa</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Conferencias</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Terminos y condiciones</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Privacidad</a>
+        <a href="http://" class="col fs-5 text-light text-decoration-none">Estudiantes</a>
+      </footer>
+    <script src="javas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
